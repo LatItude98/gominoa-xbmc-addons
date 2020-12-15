@@ -30,6 +30,8 @@
 		<setting id="skip"       type="bool"   label="Skip Ads"         default="false" visible="!eq(-2,0)"/>
 	</category>
 	<category                                      label="Advanced">
+        <setting id="debug"      type="bool"   label="Debug"            default="false" />
+        <setting id="notification" type="bool"   label="Notification"            default="false" />        
 		<setting id="history"    type="slider" label="Playlist History" default="14"    range="0,1,50"     option="int"/>
 		<setting id="adsize"     type="slider" label="Advert Size"      default="272"   range="8,8,1024"   option="int" help="This is help"/>
 		<setting id="delay"      type="slider" label="Track Prefetch"   default="7"     range="1,1,30"     option="int"/>

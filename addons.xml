@@ -25,10 +25,13 @@
 </addon>
 
 <addon id="repository.rocky4546" name="rocky4546's XBMC Addons" version="0.2.1" provider-name="gominoa, rocky4546">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
 	<extension point="xbmc.addon.repository" name="rocky4546's XBMC Addon Repository">
-		<info compressed="false">https://raw.github.com/rocky4546/gominoa-xbmc-addons/master/addons.xml</info>
-		<checksum>https://raw.github.com/rocky4546/gominoa-xbmc-addons/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.github.com/rocky4546/gominoa-xbmc-addons/master/repo</datadir>
+        <info compressed="false">https://raw.githubusercontent.com/rocky4546/gominoa-xbmc-addons/Matrix/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/rocky4546/gominoa-xbmc-addons/Matrix/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/rocky4546/gominoa-xbmc-addons/Matrix/repo</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Install gominoa's, rocky4546 Addons</summary>
@@ -38,27 +41,32 @@
 </addon>
 
 <addon id="plugin.audio.pandoki"
-	name="Pandoki"
-	version="0.9.4a"
-	provider-name="gominoa, rocky4546">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>audio</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Pandora Internet Radio</summary>
-		<description lang="en">Pandora Internet Radio</description>
-		<disclaimer lang="en">Ain't my fault</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-		<forum>https://forum.xbmc.org/showthread.php?tid=205547</forum>
-		<website></website>
-		<email></email>
-		<source>https://github.com/rocky4546/gominoa-xbmc-addons/Kodi18.0</source>
-	</extension>
+    name="Pandoki"
+    version="0.10.2"
+    provider-name="gominoa, rocky4546, truckershitch">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Pandora Internet Radio</summary>
+        <description lang="en">Pandora Internet Radio</description>
+        <disclaimer lang="en">Ain't my fault</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+        <forum>https://forum.xbmc.org/showthread.php?tid=205547</forum>
+        <website>http://www.pandora.com/</website>
+        <email></email>
+        <source>https://github.com/rocky4546/gominoa-xbmc-addons</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+
+    </extension>
 </addon>
 
 <addon
