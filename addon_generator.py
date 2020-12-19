@@ -1,3 +1,4 @@
+# REQUIRES PYTHON 3
 # *
 # *  Copyright (C) 2018      Lunatixz
 # *  Copyright (C) 2012-2013 Garrett Brown

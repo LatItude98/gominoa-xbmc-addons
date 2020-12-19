@@ -42,18 +42,19 @@
 
 <addon id="plugin.audio.pandoki"
     name="Pandoki"
-    version="0.10.2"
+    version="0.10.3"
     provider-name="gominoa, rocky4546, truckershitch">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.urllib3" version="1.25.8+matrix.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Pandora Internet Radio</summary>
-        <description lang="en">Pandora Internet Radio</description>
-        <disclaimer lang="en">Ain't my fault</disclaimer>
+        <summary lang="en_GB">Pandora Internet Radio</summary>
+        <description lang="en_GB">Pandora Internet Radio</description>
+        <disclaimer lang="en_GB">Ain't my fault</disclaimer>
         <language></language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
