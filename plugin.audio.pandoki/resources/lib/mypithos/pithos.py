@@ -105,7 +105,8 @@ class Pithos(object):
         def encode_hex(plain):
             return codecs.encode(plain.encode('latin-1'), 'hex').decode()
 
-        xbmc_log(msg='type(s): %s pandora_encrypt s: %s' % (type(s), s), level=xbmc.LOGDEBUG)
+        # contains username/password.  Do not log
+        #xbmc_log(msg='type(s): %s pandora_encrypt s: %s' % (type(s), s), level=xbmc.LOGDEBUG)
         return "".join([encode_hex(self.blowfish_encode.encrypt(self.pad(s[i:i+8], 8))) for i in range(0, len(s), 8)])
 
 

@@ -2,8 +2,8 @@ import collections, re, socket, sys, threading, time, os
 import traceback
 import urllib, urllib3
 import xbmc, xbmcaddon, xbmcgui, xbmcplugin, xbmcvfs
-import mypithos
 
+import mypithos
 from musicbrainzngs import set_useragent, search_recordings
 
 _addon	= xbmcaddon.Addon()
@@ -91,7 +91,6 @@ class Pandoki(object):
         set_useragent("kodi.%s" % _id, Val('version'))
         xbmcvfs.mkdirs(xbmcvfs.translatePath(Val('cache')))
         xbmcvfs.mkdirs(xbmcvfs.translatePath(Val('library')))
-
 
     def Proxy(self):
         log('def Proxy')
@@ -413,7 +412,7 @@ class Pandoki(object):
 
             file.write(data)
             size += len(data)
-            if lastnotify + 120 < time.time():
+            if lastnotify + 60 < time.time():
                 if size == lastsize:
                     log('Aborting Song, Song Stopped Buffering: %d out of %d downloaded' % (size, totl), song)
                     notification('Song Stopped Buffering' '[COLOR lime] %d' % (size * 100 / totl ) + '% ' + song['title'] + ' [/COLOR]' , '5000', iconart)
@@ -703,6 +702,7 @@ class Pandoki(object):
         if (len1 - pos) < 2 or (len1 - pos + self.downloading) < (_maxdownloads + 1):
             self.Next()
 
+        log('###################22222222 PLAYLIST INFO: %s %s %s' % ( len1, pos, tokn))
         if ((len1 - pos) > 1) and (tokn == 'mesg'):
             self.player.playnext()
 
