@@ -235,7 +235,7 @@ class Pandoki(object):
 
     def Info(self, s):
         log('def Info')
-        info = { 'artist' : s['artist'], 'album' : s['album'], 'title' : s['title'], 'rating' : s['rating'] }
+        info = { 'artist' : s['artist'], 'album' : s['album'], 'title' : s['title'], 'rating' : s['rating'], 'mediatype':'song' }
 
         if s.get('duration'):
             info['duration'] = s['duration']
