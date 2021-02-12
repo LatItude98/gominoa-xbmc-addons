@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # REQUIRES PYTHON 3
 # *
 # *  Copyright (C) 2018      Lunatixz
